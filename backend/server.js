@@ -14,7 +14,7 @@ const app = express()
 app.use(cors());
 app.use(
   cors({
-    origin: "https://split-the-bills-eight.vercel.app/",
+    origin: "https://split-the-bills-hieu.vercel.app",
     methods: ['GET', 'DELETE', 'POST', 'PATCH'],
   })
 )
