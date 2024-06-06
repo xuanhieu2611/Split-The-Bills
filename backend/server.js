@@ -27,6 +27,7 @@ app.use(cookieParser());
 app.use('/api/users/', usersRoutes);
 app.use('/api/transactions/', transactionsRoutes);
 
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
 app.listen(process.env.PORT, () => {
     console.log("connected to db & listening on port", process.env.PORT);
