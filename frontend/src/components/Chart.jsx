@@ -14,7 +14,7 @@ export default function Chart() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/api/transactions/overview/${currentUser.id}`)
+                const response = await axios.get(`https://split-the-bills-server.vercel.app/api/transactions/overview/${currentUser.id}`)
                 setPerson(response.data.map(item => item.person))
                 setAmount(response.data.map(item => item.amount))
             } catch (err) {

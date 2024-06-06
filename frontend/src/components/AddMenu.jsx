@@ -32,7 +32,7 @@ export default function AddMenu({onClose}) {
       ...inputs,
       uid: user.id,
       }
-      await axios.post("http://localhost:4000/api/transactions/add", body)
+      await axios.post("https://split-the-bills-server.vercel.app/api/transactions/add", body)
       dispatch({
         type:"ADD_TRANSACTION",
         payload: inputs

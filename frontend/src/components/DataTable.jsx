@@ -10,7 +10,7 @@ export default function Table() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:4000/api/transactions/${currentUser.id}`)
+        const response = await axios.get(`https://split-the-bills-server.vercel.app/api/transactions/${currentUser.id}`)
         dispatch({
           type: "SET_TRANSACTIONS",
           payload: response.data

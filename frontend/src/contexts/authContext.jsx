@@ -29,7 +29,7 @@ export const AuthContextProvider = ({children}) => {
     const [currentUser, setCurrentUser] = useState(JSON.parse(localStorage.getItem("user")) || null)
 
     const login = async (inputs) => {
-        const response = await axios.post("http://localhost:4000/api/users/login", inputs)
+        const response = await axios.post("https://split-the-bills-server.vercel.app/api/users/login", inputs)
         setCurrentUser(response.data)
     }
 

@@ -26,7 +26,7 @@ export default function Register() {
 
     if (inputs.password == inputs.rePassword) {
       try {
-        const response = await axios.post("http://localhost:4000/api/users/register", {
+        const response = await axios.post("https://split-the-bills-server.vercel.app/api/users/register", {
           username: inputs.username,
           password: inputs.password
         })
