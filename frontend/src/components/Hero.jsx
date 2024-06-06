@@ -10,7 +10,7 @@ export default function Hero() {
           <button className="bg-gradient-to-tr from-green-200 to-green-500 px-6 py-2 rounded-full mt-5 hover:shadow-[0px_0px_16px_rgb(6,182,212)] hover:translate-y-[-4px] hover:scale-105 transition ease-in-out duration-300">Sign Up</button>
         </Link>
       </div>
-      <img className="h-3/6"src="/chart.png" alt="" />
+      <img className="h-3/6"src="/charthero.png" alt="" />
     </div>
   )
 }
