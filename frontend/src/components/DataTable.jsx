@@ -24,7 +24,7 @@ export default function Table() {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`http://localhost:4000/api/transactions/delete/${id}`)
+      await axios.delete(`https://split-the-bills-server.vercel.app/api/transactions/delete/${id}`)
       dispatch({
         type: "DELETE_TRANSACTION",
         payload: {id: id}
