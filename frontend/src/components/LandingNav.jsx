@@ -8,7 +8,7 @@ export default function LandingNav() {
           <img className="w-8 h-8" src="/logo.png" alt="" />
           <span className="font-bold text-xl bg-green-500 bg-clip-text text-transparent tracking-wider">Split The Bills</span>
         </div>
-        <ul className="flex gap-20">
+        <ul className="md:flex lg:gap-20 hidden">
           <li className="hover:scale-110 hover:bg-green-300 px-2 rounded-md transition ease-in-out duration-300"><a href="#Home">Home</a></li>
           <li className="hover:scale-110 hover:bg-green-300 px-2 rounded-md transition ease-in-out duration-300"><a href="#Features">Features</a></li>
           <li className="hover:scale-110 hover:bg-green-300 px-2 rounded-md transition ease-in-out duration-300"><a href="#Benefits">Benefits</a></li>
