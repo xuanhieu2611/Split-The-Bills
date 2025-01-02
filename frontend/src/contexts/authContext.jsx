@@ -34,7 +34,7 @@ export const AuthContextProvider = ({children}) => {
     }
 
     const logout = async () => {
-        // await axios.post("http://localhost:4000/api/users/logout")
+        await axios.post("https://split-the-bills-server.vercel.app/api/users/logout")
         setCurrentUser(null)
     }
 
